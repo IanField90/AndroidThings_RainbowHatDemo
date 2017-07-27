@@ -3,6 +3,7 @@ package things.wolfsoft.com.androidthings;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.animation.ValueAnimator;
+import android.app.Activity;
 import android.graphics.Color;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
@@ -10,7 +11,6 @@ import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.animation.LinearInterpolator;
@@ -32,7 +32,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 
-public class ThingActivity extends AppCompatActivity {
+public class ThingActivity extends Activity {
     private static final String TAG = "ThingActivity";
 
     private ButtonInputDriver buttonAInputDriver;
